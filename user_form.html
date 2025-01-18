@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="./css/form.css">
+
+
+</head>
+<body>
+    <!-- Formulario de Contacto -->
+    <div class="form-container">
+      <h2>¡Estás a un paso de obtener tu libro!</h2>
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSe0pNQvKtjXmVzyC3oUwP4XT4c423AU92q4MREeoGhaXUxIPA/formResponse" method="POST" target="_blank">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="entry.2005620554"  required>
+
+           <label for="email">Email:</label>
+            <input type="email" id="email" name="emailAddress" required>
+
+            <button type="submit" class="cta-button">¡ADQUIERE TU LIBRO!</button>
+            
+
+
+  
+        </form>
+
+        <div class="paypal-button-container"></div>
+
+       
+       </div>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=BAABtDMsykB2hcv1AnShAYv80cGNRIMakL6xYP3TAXYaA_OJueFeAf2ON09MbMthsQC-ySDw6gIpPaC40Y&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+        <div id="paypal-container-J45MMPPZDN52Y"></div>
+    <script>
+        paypal.HostedButtons({
+        hostedButtonId: "J45MMPPZDN52Y",
+        }).render("#paypal-container-J45MMPPZDN52Y")
+    </script>
+
+ 
+
+
+
+
+    <!-- Invisible iframe to prevent redirection -->
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+
+    
+    
+</body>
+</html>
